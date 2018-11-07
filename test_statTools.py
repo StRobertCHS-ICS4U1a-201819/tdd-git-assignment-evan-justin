@@ -24,14 +24,15 @@ def test_median_base3():
 def test_median_empty():
     assert(median([]) == "The list is empty")
 
+# testing function mode()
 def test_mode_base1():
     assert(mode([1,1,1,2,2,3]) == 1)
 
 def test_mode_base2():
-    assert (mode([1,1,1,2,2,2,3]) == (1,2))
+    assert(mode([1,1,1,2,2,2,3]) == "no unique mode")
 
 def test_mode_base3():
-    assert (mode([1,2,3,1,2,1]) == 1)
+    assert(mode([1,2,3,1,2,1]) == 1)
 
 def test_mode_empty():
-    assert (mode([]) == "The list is empty")
+    assert(mode([]) == "The list is empty")
