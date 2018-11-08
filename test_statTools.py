@@ -1,6 +1,7 @@
 from pytest import *
 from statTools import *
 
+# testing of central Tendency
 # testing function mean
 def test_mean_base1():
     assert(mean([1,2,3]) == 2)
@@ -11,7 +12,7 @@ def test_mean_base2():
 def test_mean_empty():
     assert(mean([]) == "The list is empty")
 
-#testing function median()
+# testing function median()
 def test_median_base1():
     assert(median([1,2,3]) == 2)
 
@@ -23,3 +24,31 @@ def test_median_base3():
 
 def test_median_empty():
     assert(median([]) == "The list is empty")
+
+# testing function mode()
+def test_mode_base1():
+    assert(mode([1,1,1,2,2,3]) == 1)
+
+def test_mode_base2():
+    assert (mode([1,1,1,2,2,2,3]) == (1,2))
+
+def test_mode_base3():
+    assert (mode([1,2,3,1,2,1]) == 1)
+
+def test_mode_empty():
+    assert (mode([]) == "The list is empty")
+
+
+# testing the Measures of Spread
+# testing the function range()
+def test_range_base1():
+    assert(Range([1,2,3,4,5]) == 4)
+
+def test_range_base2():
+    assert(Range([1,3,5,2,4,6]) == 5)
+
+def test_range_base3():
+    assert(Range([1,1,1,1,1]) == 0)
+
+def test_range_empty():
+    assert(Range([]) == "The list is empty")
