@@ -1,3 +1,4 @@
+# define a function mean() to get the avg of a list of number
 def mean(myList):
    if myList == []:
        return "The list is empty"
@@ -8,6 +9,7 @@ def mean(myList):
        avg = total/(len(myList))
        return avg
 
+# def a function median() to get the the middle item when the data are arranged from lowest to highest
 def median(myList):
    if myList == []:
        return "The list is empty"
@@ -21,12 +23,7 @@ def median(myList):
            medIndex2 = len(myList)/2 + 1
            return (myList[medIndex1 - 1] + myList[medIndex2 - 1]) / 2
 
-def Range(myList):
-   if myList == []:
-       return "The list is empty"
-   else:
-       return max(myList) - min(myList)
-
+# define a function mode() to get the observation that occurs most frequently in the list
 def mode(myList):
    myList = sorted(myList)
    count = 0
@@ -46,18 +43,12 @@ def mode(myList):
    else:
        return "no unique mode"
 
-def lowerQuartile(myList):
+# define a function Range() to get the difference between the largest and smallest result in the list
+def Range(myList):
    if myList == []:
        return "The list is empty"
    else:
-       myList = sorted(myList)
-       if len(myList) % 2 == 1:
-           if (len(myList) - len(myList) // 2) % 2 == 1:
-               medIndex = len(myList) // 2 + 1
-               return myList[medIndex - 1]
-           else:
+       return max(myList) - min(myList)
 
-       else:
-           medIndex1 = len(myList)/2
-           medIndex2 = len(myList)/2 + 1
-           return (myList[medIndex1 - 1] + myList[medIndex2 - 1]) / 2
+
+
