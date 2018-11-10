@@ -24,10 +24,17 @@
         <entry file="file://$PROJECT_DIR$/test_statTools.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+            <state relative-caret-position="432">
+=======
+            <state relative-caret-position="414">
+>>>>>>> evan
+=======
             <state relative-caret-position="247">
               <caret line="41" column="30" lean-forward="true" selection-end-line="53" selection-end-column="44" />
 =======
             <state relative-caret-position="432">
+>>>>>>> evan
               <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
 >>>>>>> origin/evan
             </state>
@@ -198,6 +205,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_statTools.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> evan
         <state relative-caret-position="414">
           <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
         </state>
@@ -205,6 +217,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_statTools.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+>>>>>>> evan
+=======
+>>>>>>> evan
         <state relative-caret-position="432">
           <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
         </state>
