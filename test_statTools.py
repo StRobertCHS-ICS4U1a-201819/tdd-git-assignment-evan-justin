@@ -67,3 +67,16 @@ def test_range_base3():
 def test_range_empty():
     assert(Range([]) == "The list is empty")
 
+# testing the function upperQuartile
+def test_upperQuartile_base1():
+    assert(upperQuartile([1,2,3,4]) == 3.5)
+
+def test_upperQuartile_base2():
+    assert(upperQuartile([18,20,23,20,23,27,24,23,29]) == 25.5)
+
+def test_upperQuartile_base3():
+    assert(upperQuartile([1,2,3]) == 3)
+
+def test_upperQuartile_empty():
+    assert(upperQuartile([]) == "The list is empty")
+
