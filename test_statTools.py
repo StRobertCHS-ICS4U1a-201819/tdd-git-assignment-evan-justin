@@ -23,6 +23,12 @@ def test_mean_base2():
 def test_mean_base3():
     assert(mean([1,2,3,4]) == 2.5)
 
+def test_mean_base4():
+    assert(mean([-4,-3,-2,-1,0,1,2,3,4]) == 0)
+
+def test_mean_base5():
+    assert(mean([0]) == 0)
+
 def test_mean_empty():
     assert(mean([]) == "The list is empty")
 
@@ -36,6 +42,12 @@ def test_median_base2():
 def test_median_base3():
     assert(median([3,3,3]) == 3)
 
+def test_median_base4():
+    assert(median([1,2,4,5]) == 3)
+
+def test_median_base5():
+    assert(median([0]) == 0)
+
 def test_median_empty():
     assert(median([]) == "The list is empty")
 
@@ -44,13 +56,13 @@ def test_mode_base1():
     assert(mode([1,1,1,2,2,3]) == 1)
 
 def test_mode_base2():
-    assert (mode([1,1,1,2,2,2,3]) == "no unique mode")
-
-def test_mode_base3():
     assert (mode([1,2,3,1,2,1]) == 1)
 
 def test_mode_empty():
     assert (mode([]) == "The list is empty")
+
+def test_mode_noUniqueMode():
+    assert (mode([1,1,1,2,2,2,3]) == "no unique mode")
 
 
 # testing the Measures of Spread
@@ -59,7 +71,7 @@ def test_range_base1():
     assert(Range([1,2,3,4,5]) == 4)
 
 def test_range_base2():
-    assert(Range([1,3,5,2,4,6]) == 5)
+    assert(Range([1,3,5,2,4,6,4]) == 5)
 
 def test_range_base3():
     assert(Range([1,1,1,1,1]) == 0)
