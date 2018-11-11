@@ -12,10 +12,10 @@
 
 # define a function mean()get the avg of a list of number
 def mean(int_List):
-    """
+    """Find the average of the list
 
-    :param int_List:
-    :return:
+    :param int_List: list a set of data
+    :return: float the mean of the list
     """
     if int_List == []:
          return "The list is empty"
@@ -28,6 +28,11 @@ def mean(int_List):
 
 # def a function median() to get the the middle item when the data are arranged from lowest to highest
 def median(int_List):
+    """Find the median of the list
+
+    :param int_List: list a set of data
+    :return: float the median of the list
+    """
     int_List = sorted(int_List)
     if int_List == []:
          return "The list is empty"
@@ -43,6 +48,11 @@ def median(int_List):
 
 # define a function mode() to get the observation that occurs most frequently in the list
 def mode(int_List):
+    """Find the mode of the list
+
+        :param int_List: list a set of data
+        :return: float the median of the mode
+    """
     int_List = sorted(int_List)
     count = 0
     num1 = 0
@@ -63,6 +73,11 @@ def mode(int_List):
 
 # define a function Range() to get the difference between the largest and smallest result in the list
 def Range(int_List):
+    """Find the range of the list
+
+        :param int_List: list a set of data
+        :return: float the range of the list
+    """
     if int_List == []:
          return "The list is empty"
     else:
@@ -70,6 +85,11 @@ def Range(int_List):
 
 # define a function lowerQuartile() to get the lower quartile of the list
 def lowerQuartile(int_List):
+    """Find the lower quartile of the list
+
+        :param int_List: list a set of data
+        :return: float the lower quartile of the list
+    """
     int_List = sorted(int_List)
     if int_List == []:
          return "The list is empty"
@@ -85,6 +105,11 @@ def lowerQuartile(int_List):
 
 # define a function lowerQuartile() to get the upper quartile of the list
 def upperQuartile(int_List):
+    """Find the median of the list
+
+        :param int_List: list a set of data
+        :return: float the median of the list
+    """
     int_List = sorted(int_List)
     if int_List == []:
           return "The list is empty"
