@@ -1,12 +1,12 @@
 #-------------------------------------------------------------------------------
-# Name:	statTool.py
+# Name:    statTool.py
 # Purpose:
 # to create a single python module called statTools.py that contains functions
 # for Measures of Central Tendency and Measures of Spread.
 #
-# Author:	Evan Bai / Justin Guo
+# Author:  Evan Bai / Justin Guo
 #
-# Created:	10/11/2018
+# Created: 10/11/2018
 #-------------------------------------------------------------------------------
 
 
@@ -92,3 +92,4 @@ def upperQuartile(int_List):
         else:
             upperQuartileIndex = (len(int_List) + 1) * 3 // 4
             return int_List[upperQuartileIndex - 1]
+

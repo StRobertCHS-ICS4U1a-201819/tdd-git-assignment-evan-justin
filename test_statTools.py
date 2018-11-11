@@ -1,11 +1,11 @@
 #-------------------------------------------------------------------------------
-# Name:	test_statTool.py
+# Name:    test_statTool.py
 # Purpose:
 # to test every single function in python module statTools.py
 #
-# Author:	Evan Bai / Justin Guo
+# Author:  Evan Bai / Justin Guo
 #
-# Created:	10/11/2018
+# Created: 10/11/2018
 #-------------------------------------------------------------------------------
 
 
