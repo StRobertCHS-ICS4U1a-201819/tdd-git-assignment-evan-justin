@@ -80,3 +80,7 @@ def test_upperQuartile_base3():
 def test_upperQuartile_empty():
     assert(upperQuartile([]) == "The list is empty")
 
+#testing the function variance
+def test_variance_base1():
+    assert(variance([1,2,3,4,5]) == 2)
+

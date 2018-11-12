@@ -129,7 +129,7 @@ def variance(int_List):
     """Find the variance of the list
     
         :param int_List: list of a set of number
-        :return: variance
+        :return: variance of the list
     """
     avg = 0
     if int_List == []:
@@ -143,8 +143,4 @@ def variance(int_List):
         mean = total / number
     for i in int_List:
         avg += (i - mean) ** 2
-    return avg
-
-
-#define a function standard 
-def standard_deviation(int_List): 
+    return round(avg / len(int_list), 3)
