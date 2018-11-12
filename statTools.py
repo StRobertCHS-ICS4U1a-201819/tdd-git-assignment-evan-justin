@@ -9,7 +9,7 @@
 # Created: 10/11/2018
 #-------------------------------------------------------------------------------
 
-
+import math
 # define a function mean()get the avg of a list of number
 def mean(int_List):
     """Find the average of the list
@@ -133,7 +133,7 @@ def variance(int_List):
     """
     avg = 0
     if int_List == []:
-        return "The list is empty."
+        return "The list is empty"
     else:
         total = 0
         number = 0
@@ -144,3 +144,24 @@ def variance(int_List):
     for i in int_List:
         avg += (i - mean) ** 2
     return round(avg / len(int_List), 3)
+
+def standard_deviation(int_List):
+    """Find the standard deviation of the list
+    
+        :param int_List: list of a set of number
+        :return: standard deviation of the list
+    """
+    avg = 0
+    if int_List == []:
+        return "The list is empty"
+    else:
+        total = 0
+        number = 0
+        for i in int_List:
+            total += i
+            number += 1
+        mean = total / number
+    for i in int_List:
+        avg += (i - mean) ** 2
+    variance = avg / len(int_List)
+    return round(math.sqrt(variance))

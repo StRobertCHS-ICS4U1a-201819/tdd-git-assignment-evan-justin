@@ -84,3 +84,24 @@ def test_upperQuartile_empty():
 def test_variance_base1():
     assert(variance([1,2,3,4,5]) == 2)
 
+def test_variance_base2():
+    assert(variance([1,2,4,5,5,1,7]) == 4.531)
+
+def test_variance_base3():
+    assert(variance([1,1,1,1]) == 0)
+
+def test_variance_empty():
+    assert(variance([]) == "The list is empty")
+
+#testing the function standard_deviation
+def test_standard_deviation_base1():
+    assert(standard_deviation([1,2,3,4,5]) == 1)
+
+def test_standard_deviation_base2():
+    assert(standard_deviation([1,2,3,4,44,8,5,4]) == 13)
+
+def test_standard_deviation_base3():
+    assert(standard_deviation([1,1,1,1,1]) == 0)
+
+def test_standard_deviation_empty():
+    assert(standard_deviation([]) == "The list is empty")
