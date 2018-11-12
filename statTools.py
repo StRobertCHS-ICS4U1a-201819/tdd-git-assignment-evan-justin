@@ -145,6 +145,7 @@ def variance(int_List):
         avg += (i - mean) ** 2
     return round(avg / len(int_List), 3)
 
+#define standard_deviation to find the square root of variance
 def standard_deviation(int_List):
     """Find the standard deviation of the list
     
