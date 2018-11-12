@@ -143,4 +143,4 @@ def variance(int_List):
         mean = total / number
     for i in int_List:
         avg += (i - mean) ** 2
-    return round(avg / len(int_list), 3)
+    return round(avg / len(int_List), 3)
